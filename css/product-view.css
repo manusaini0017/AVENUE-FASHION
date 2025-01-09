@@ -243,7 +243,7 @@ label {
   border: 2px solid rgb(7, 8, 8);
   position: absolute;
   right: 17px;
-  top: 35px;
+  top: 42px;
   border-radius: 10px;
   display: none;
 }
@@ -650,8 +650,12 @@ body {
   margin-bottom: 20px;
   color: #8e8c8c;
 }
+.wrap-3 .tab_data table {
+  border-collapse: collapse;
+}
 .wrap-3 .tab_data table table, .wrap-3 .tab_data table td, .wrap-3 .tab_data table th {
   border: 1px solid gray;
+  padding: 10px 2rem;
 }
 .wrap-3 .tab_data table thead th {
   font-weight: 700;

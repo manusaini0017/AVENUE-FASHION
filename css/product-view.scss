@@ -302,8 +302,8 @@ body {
     
         }
 
-       table{
-        table, td, th{border: 1px solid gray;}
+       table{ border-collapse: collapse;
+        table, td, th{border: 1px solid gray;  padding:10px 2rem;}
        thead{
         th{font-weight: 700;  color: #8e8e8e;}
        }
