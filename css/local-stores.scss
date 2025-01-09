@@ -1,0 +1,258 @@
+@use 'reset';
+@use 'grid';
+@use 'header';
+@use 'footer';
+@use 'banner';
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+$ff:"Montserrat",sans-serif;
+$fontSize:15px;
+
+html{
+    font-size: $fontSize;
+     
+}
+
+
+body{
+    font: 16px $ff;
+    font-size: 16px;
+   
+}
+
+
+.wrap-3{padding: 2rem 0;
+    .store-location{
+        margin-top: 2rem;
+    }
+    h5{font-size: 18px; font-weight: 500; color: #817d7e;}
+    small{font-size: 13px; font-weight: 500; margin: 15px 0 8px 0; color: #959595; display: block;}
+    p{font-size: 1rem; line-height: 22px; color: #b0afaf;margin-bottom: 15px;}
+.view{display: grid;place-items:center; border: 2px solid #969696;
+    // padding: 10px 15px;
+    width: 160px; height: 40px;
+a{color:#969696 ; font-size: 1em;}
+
+&:hover{background-color: #40d6d6; border: #40d6d6;
+a{color: #fff;}}}
+}
+
+.wrap-4 {border-color: #fafafa; padding-bottom: 124px;
+    .col-4{margin-top:40px;
+        h5{font-size: 18px; font-weight: 500; color: #817d7e;}
+        small{font-size: 13px; font-weight: 500; margin: 15px 0 8px 0; color: #959595; display: block;}
+        p{font-size: 1rem; line-height: 22px; color: #b0afaf;margin-bottom: 15px;}
+    
+   .contact{
+    a{margin-right: 15px; color: #817d7e;}
+   }
+
+li{font-size: 14px; color: #817d7e; margin-top: 10px;}
+
+.circle{width: 2rem; height: 2rem; flex-shrink: 0; background-color: #727272; display: grid; place-items: center; border-radius: 50%; margin: 0 1rem  0 0;
+
+   
+span{color: #fff; font-size: 15px;}}
+
+.social{margin-top: 58px;}
+
+}
+
+    
+}
+
+
+//responsive
+
+@media screen and (max-width: 1770px){
+
+}
+
+@media screen and (max-width: 1200px){
+    html{font-size: 14px;}
+ 
+    
+}
+
+@media screen and (max-width: 980px){
+
+    .col-t-4 {
+        flex-basis: 33.33%;
+        max-width: 33.33%;
+    }
+
+
+    .col-t-12 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+
+    .bottom-nav {
+        .menu {
+            display: block;
+        }
+
+        .collapse {
+            display: none;
+                position: absolute; right: 0;  top: 72px; z-index: 1; text-align: right; left: 0;
+                background-color: #131313;
+    
+               a{padding-bottom: 10px; color: white;}
+               .tablet_menu {padding-top: 10px;
+                >li{padding: 0 20px 10px 0; }
+               }
+    
+               .dropdown{position: static; 
+                h4{white-space: nowrap;}
+
+            a{color: black;}}
+
+            .flex-t-column{flex-flow: column;}
+          
+            
+        }
+
+        form {
+            margin-right: 188px;
+
+            label {
+                input {
+                    width: 20rem;
+                }
+            }
+        }
+
+    }
+
+    .footer {
+        .footer-bottom {
+            .flex {
+                div:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+    .wrap-4{padding-bottom: 67px;}
+
+}
+
+@media screen and (max-width: 768px){
+    html{font-size: 13px;}
+
+    .bottom-nav {
+        form {
+            margin-right: 125px;
+
+            label {
+                input {
+                    width: 19rem;
+                }
+            }
+        }
+    }
+
+    .footer {
+        .footer-bottom {
+            .flex {
+                div:first-child {
+                    margin-left: -34px;
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 460px){
+    .col-p-12 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    .col-p-6 {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+
+    header {
+
+        .p-text-center {
+            text-align: center;
+        }
+
+
+
+        .top-nav {
+
+            label{
+                select{margin-right: 100px;}
+            }
+
+
+            .column-gap {
+                gap: 2rem;
+            }
+
+
+            
+
+            .currency {
+                display: none;
+            }
+
+
+
+        }
+
+        .bottom-nav {
+            padding-top: 19px;
+
+            h2 {
+                margin-top: 1em;
+                font-size: 22px;
+            }
+
+            .row {
+                .col-p-12 {
+                    order: -1;
+                }
+
+                .menu {
+                    top: 67px;
+                }
+
+
+
+            }
+
+
+            form {
+                margin-right: 48px;
+
+                label {
+                    input {
+                        width: 18rem;
+                    }
+                }
+            }
+
+            .collapse{top: 109px;
+                
+            
+                .flex-column{flex-direction: column;}
+    
+                .sale{
+                    h2{font-size: 19px;}
+                }
+            }
+        }
+    }
+
+    .wrap-2{
+        h2{font-size: 41px;}
+    }
+    
+}

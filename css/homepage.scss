@@ -1,0 +1,474 @@
+@use 'reset';
+@use 'grid';
+@use 'header';
+@use 'footer';
+@use 'lookbook';
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+$ff: "Montserrat", sans-serif;
+$fontSize: 15px;
+
+html {
+    font-size: $fontSize;
+
+}
+
+
+body {
+    font: 16px $ff;
+    font-size: 16px;
+
+}
+
+
+
+//home page start
+
+//.wrap-2 start
+.wrap-2 {
+    background: url(../img/banner.webp) no-repeat top center/cover;
+    padding: 300px 0;
+    top: -89px;
+    position: relative;
+
+    .men-collection {
+        color: rgb(69, 70, 71);
+        font-size: 12px;
+        border: 2px solid rgb(94, 94, 95);
+        // display: inline-block;
+        padding: 9px 30px;
+        position: absolute;
+        top: 84%;
+        right: 15%;
+        // z-index: 2;
+
+        &:hover {
+            background-color: #00c8c8;
+            border-color: #00c8c8;
+            color: #fff;
+        }
+    }
+}
+
+//.wrap-2 end
+
+.line {
+    hr {
+        max-width: 100%;
+    }
+}
+//.wrap-3 start
+.wrap-3 {
+    padding: 47px 0 0px 0;
+    position: relative;
+
+    .bar {
+        width: 90px;
+        height: 35px;
+        border: 2px solid rgb(7, 8, 8);
+        position: absolute;
+        left: 17px;
+        top: 16px;
+        border-radius: 10px;
+        display: none;
+
+    }
+
+    .bar span {
+        height: 2px;
+        display: block;
+        margin: 4px auto;
+        width: 60px;
+        background-color: rgb(10, 10, 10);
+        transition: 400ms;
+        transform-origin: right center;
+    }
+
+    .bar.active span:nth-child(1){rotate: -14deg;}
+.bar.active span:nth-child(2){opacity: 0;}
+.bar.active span:nth-child(3){rotate: 14deg;}
+
+
+    .tab {
+        a {
+            margin-left: 14px;
+            font-size: 13px;
+            color: rgb(114, 114, 114);
+            font-weight: 500;
+
+           
+        }
+
+        .active{background-color: #00c8c8; padding: 5px 15px 5px 6px; margin-left: 1rem; 
+            &:hover {color: #fff;}
+        }
+    }
+
+    .tab div:not(:nth-child(1)) {
+        margin-left: 35px;
+    }
+
+    .product {
+
+
+        text-align: center;
+        // margin-top: 2rem;
+        box-shadow: 0 0 5px #aaa;
+        background: #f8f8f8;
+
+        position: relative;
+
+        .about {
+            position: absolute;
+            background-color: #fff;
+            bottom: -50px;
+            visibility: hidden;
+            opacity: 0;
+            left: 0;
+            right: 0;
+            transition: 400ms;
+            padding: 1rem;
+        }
+
+        &:hover {
+            box-shadow: 0 0 10px #aaa;
+        }
+
+        &:hover .about {
+            visibility: visible;
+            opacity: 1;
+            bottom: 0px;
+        }
+
+
+
+        b {
+            font-size: 13px;
+            font-weight: 500;
+            color: #727272;
+            display: block;
+            margin: 0 0 .8rem 0;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #8e8c8c;
+            margin-bottom: 1rem;
+        }
+
+        .circle {
+            width: 2rem;
+            height: 2rem;
+            flex-shrink: 0;
+            background-color: #727272;
+            display: grid;
+            place-items: center;
+            border-radius: 50%;
+            margin: 0 1rem 0 0;
+
+            &:hover {
+                background-color: #00c8c8;
+                border-radius: 50%;
+            }
+
+            span {
+                color: #fff;
+                font-size: 15px;
+            }
+        }
+
+        .prise {
+            position: absolute;
+            top: 3%;
+            left: 3%;
+            color: #8e8c8c
+        }
+
+        .prise2 {
+            position: absolute;
+            top: 2%;
+            left: 8%;
+            color: #8e8c8c
+        }
+    }
+    .bx-wrapper{margin-bottom: 40px;}
+    .tab{margin-bottom: 1.5rem;}
+    .bx-pager{display: none;}
+    .product:hover .bx-pager{display: block;}
+
+
+}
+
+//.wrap-3 end
+//home page end
+
+
+//responsive
+
+@media screen and (max-width: 1770px) {
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    html {
+        font-size: 14px;
+    }
+
+ 
+  .wrap-4{
+    .flex-column{flex-flow: column;}
+   .lookbook-about{
+    .look_book{
+        margin: 30px 0 77px 0;
+        padding-left: 2rem;
+    }
+   }
+  }
+
+}
+
+@media screen and (max-width:980px) {
+
+    .col-t-4 {
+        flex-basis: 33.33%;
+        max-width: 33.33%;
+    }
+
+
+    .col-t-12 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+
+    .bottom-nav {
+        .menu {
+            display: block;
+        }
+
+        .collapse {
+            display: none;
+            position: absolute; right: 0;  top: 72px; z-index: 1; text-align: right; left: 0;
+            background-color: #131313;
+
+           a{padding-bottom: 10px; color: white;}
+           .tablet_menu {padding-top: 10px;
+            >li{padding: 0 20px 10px 0; }
+           }
+
+           .dropdown{position: static; 
+        a{color: black;}}
+
+        .flex-t-column{flex-flow: column;}
+      
+        }
+
+        form {
+            margin-right: 188px;
+
+            label {
+                input {
+                    width: 20rem;
+                }
+            }
+        }
+
+        
+
+    }
+
+    .wrap-2{top: -87px;}
+
+
+    .wrap-3 {padding: 69px 0 0 0;
+
+
+        .bar {
+            display: block;
+        }
+
+        .tab {
+            display: none;
+            position: absolute; right: 0;  top: 57px; z-index: 1;  left: 0;
+            background-color: #131313;
+
+           .row{
+            div{margin-left: 0; padding: 10px;}
+           }
+           .flex-t-column{flex-flow: column;}
+        }
+
+       
+      
+    }
+
+    .wrap-4{
+        .flex{flex-flow: row;}
+    }
+
+
+    .footer {
+        .footer-bottom {
+            .flex {
+                div:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+    html {
+        font-size: 13px;
+    }
+
+    .bottom-nav {
+        form {
+            margin-right: 125px;
+
+            label {
+                input {
+                    width: 19rem;
+                }
+            }
+        }
+    }
+
+
+
+
+
+    .footer {
+        .footer-bottom {
+            .flex {
+                div:first-child {
+                    margin-left: -34px;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+@media screen and (max-width: 460px) {
+
+    .col-p-12 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    .col-p-6 {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+
+    header {
+
+        .p-text-center {
+            text-align: center;
+        }
+
+
+
+        .top-nav {
+
+            label{
+                select{margin-right: 100px;}
+            }
+
+
+            .column-gap {
+                gap: 2rem;
+            }
+
+
+            
+
+            .currency {
+                display: none;
+            }
+
+
+
+        }
+
+        .bottom-nav {
+            padding-top: 19px;
+
+            h2 {
+                margin-top: 1em;
+                font-size: 22px;
+            }
+
+            .row {
+                .col-p-12 {
+                    order: -1;
+                }
+
+                .menu {
+                    top: 67px;
+                }
+
+
+
+            }
+
+
+            form {
+                margin-right: 48px;
+
+                label {
+                    input {
+                        width: 18rem;
+                    }
+                }
+            }
+
+            .collapse{top: 109px;
+            
+            .flex-column{flex-direction: column;}
+
+            .sale{
+                h2{font-size: 19px;}
+            }
+        }
+        }
+
+       
+    }
+
+    .wrap-2 {
+        top: -119px;
+        background-size: 150%;
+        padding: 243px 0 0 0;
+
+        .men-collection {
+            top: 73%;
+            right: 8%;
+            padding: 9px 10px;
+        }
+
+    }
+
+    .line {
+        hr {
+            margin-top: -94px;
+        }
+    }
+
+    .wrap-4{
+      
+
+        .flex-column{flex-flow: column;}
+    }
+
+}

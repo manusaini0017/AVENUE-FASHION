@@ -1,0 +1,31 @@
+.wrap-4{
+    padding: 2rem 0 100px 0;
+
+   
+    
+    .lookbook-about{background-color: rgb(248, 248, 248); margin-top: 2rem; box-shadow: 0 0 5px #aaa;
+        &:hover{box-shadow: 0 0 10px #aaa;}
+
+       
+
+        h3{color: rgb(87, 81, 83); margin: 10px 0 20px 0; font-size:26px ;  font-weight: 400;}
+        p{margin-bottom: 25px;  font-size: 15px; line-height: 22px; color: rgb(123, 123, 123);}
+
+    .look_book{margin: 87px  0 139px 0; margin-left: 28px;}
+    h2{font-size: 38px; color: rgb(87, 81, 83);}
+
+    .view{width: 130px; height: 40px;
+        border: 2px solid rgb(119, 120, 120) ;
+        display: grid;
+        place-items: center;
+        &:hover{background-color: #00c8c8; 
+        border-color: #00c8c8;}
+
+        &:hover a{color: #fff;}
+    a{font-size: 16px; color: rgb(69, 70, 71);}}
+}
+
+
+}
+
+.line2{hr{max-width: 100%; margin-top: 68px;}}

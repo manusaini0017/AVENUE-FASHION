@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product-view</title>
+    <link rel="stylesheet" href="css/product-view.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
+</head>
+
+<body>
+
+    <header class="wrap-1">
+        <div class="top-nav">
+
+            <div class="container-small">
+                <div class="row align-center p-text-center">
+                    <div class="col-6">
+                        <label>
+                            <span class="currency">currency:</span>
+                            <select>
+                                <option value="">GBP</option>
+                                <option value="">dollar</option>
+                                <OPtion value="">INR</OPtion>
+                            </select>
+
+                        </label>
+                    </div>
+                    <div class="col-6 ">
+                        <div class="flex align-center p-text-center justify-end column-gap">
+                           
+                            <div class="sign"><a href="signup.html">Sign in</a></div>
+                            <div class="shopping">
+                                <span class="fa fa-shopping-cart" id="cart-icon"></span>
+                                <span class="cart-count">0</span>
+                                            
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bottom-nav">
+            <div class="container">
+                <div class="row align-center">
+                    <div class="col-4">
+                        <h2>AVENUE <span>FASHION</span></h2>
+                    </div>
+                    <div class="col-8 col-p-12">
+
+
+                        <div class="row align-center">
+                            <div class="col-8 ">
+
+                                <button class="menu" aria-label="menu">
+                                    <span></span><span></span><span></span></button>
+                             
+                                <div class="collapse">
+
+                                    <ul class="flex justify-space-bet flex-t-column tablet_menu ">
+                                        <li class=" men"><a href="" class="caret">MENS</a>
+                                
+                                            
+                                                <div class="dropdown">
+                                                    <div class="flex justify-space-bet flex-column">
+                                                       
+                                                        <ul>
+                                                            <li><a href=""><b>CASUALS</b></a></li>
+                                                            <li><a href="">Jackets</a></li>
+                                                            <li><a href="">Hoodies & sweatshirt</a></li>
+                                                            <li><a href="">Polo shirt</a></li>
+                                                            <li><a href="">Sportswear</a></li>
+                                                            <li><a href="">Trousers & Chinos</a></li>
+                                                            <li><a href="">T-Shirt</a></li>
+                                                        </ul>
+                                                      
+                                                        <ul>
+                                                            <li><a href=""><b>FORMAL</b></a></li>
+                                                            <li><a href="">Jackets</a></li>
+                                                            <li><a href="">Shirts</a></li>
+                                                            <li><a href="">Suits</a></li>
+                                                            <li><a href="">Trousers</a></li>
+                                                        </ul>
+                                            
+                                                      
+                                                    </div>
+                                
+                                                   <div class="text-center sale">
+                                                    <h2>AUTUMN SALE!</h2>
+                                                    <b>UP To 50% off</b>
+                                                   </div>
+                                
+                                
+                                                </div>
+                                           
+                                            </li>
+                                        <li ><a href="">WOMENS</a></li>
+                                        <li><a href="brand.html">THE BRAND</a></li>
+                                        <li><a href="local-stores.html">LOCAL STORES</a></li>
+                                        <li class=" look"><a href="" class="caret">LOOK BOOK</a>
+                                
+                                            <div class="dropdown">
+                                                <div class="flex justify-space-bet flex-column">
+                                                   
+                                                    <ul>
+                                                        <li><b>OUR LOOKBOOKS</b></li>
+                                                        <li><a href="lookbookpage.html">Latest Posts (mixed)</a></li>
+                                                        <li><a href="lookbookpage.html">Men's Lookbook</a></li>
+                                                        <li><a href="lookbookpage.html">Women's Lookbook</a></li>
+                                                    </ul>
+                                                  
+                                                    <ul>
+                                                        <li><b>YOUR LOOKBOOK</b></li>
+                                                        <li><a href="">View nad Edit</a></li>
+                                                        <li><a href="">Share</a></li>
+                                                        <li><a href="">Delete</a></li>
+                                                       
+                                                    </ul>
+                                        
+                                                  
+                                                </div>
+                                
+                                               <div class="text-center sale">
+                                                <h2>AUTUMN SALE!</h2>
+                                                <b>UP To 50% off</b>
+                                               </div>
+                                
+                                
+                                            </div>
+                                        
+                                        
+                                        </li>
+                                    </ul>
+                      
+                   </div>
+
+                            </div>
+                                <div class="col-4">
+                                    <form>
+                                        <label><input type="text" placeholder="search"></label>
+                                        <span class="fa fa-search"></span>
+                                    </form>
+                                </div>
+
+                           
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </header>
+
+    <div class="wrap-2">
+
+        <h2>PRODUCT<span>VIEW</span></h2>
+        <h4>MENS-CASUALS-HOODIES & SWEATSHIRTS- <span>AVE CLASSIC SWEATSHIRT</span></h4>
+
+    </div>
+    <section class="wrap-3">
+        <div class="container-small">
+            <div class="row">
+                <div class="col-6 col-m-12">
+                    <div class="bxslider">
+                        <div><img src="img/AVE_CLASSIC_SWEATSHIRT-2.png" alt="sweatshirt" width="570" height="710" class="image" loading="lazy">
+                        </div>
+                         <div ><img src="img/AVE_CLASSIC_SWEATSHIRT-3.png" alt="sweatshirt" width="570" height="710" class="image" loading="lazy"></div>
+                      
+
+                    </div>
+                </div>
+                <div class="col-6 col-m-12">
+                    <h5 class="sweatshirt">AVE CLASSIC SWEATSHIRT</h5>
+                    <ul class="row">
+
+                        <li><span class="review">&#9733;&#9733;&#9733;&#9733;&#9734; </span><span
+                                class="reviews">3Reviews(s)</span></li>
+                        <li class="addreview">|<span>Add a Review</span>|</li>
+                        <ul class=" flex share mt-tablet align-center">Share:
+                            <li class="social"><a href="" aria-label="facebook"><span class="fa fa-facebook-f"></span></a></li>
+                            <li class="social"><a href="" aria-label="twitter"><span class="fa fa-twitter"></span></a></li>
+                            <li class="social"><a href="" aria-label="google"><span class="fa fa-google-plus"></span></a></li>
+                            <li class="social"><a href="" aria-label="pinterest"><span class="fa fa-pinterest-p"></span></a></li>
+                            <li class="social"><a href="" aria-label="instagram"><span class="fa fa-instagram"></span></a></li>
+                            <li class="social"><a href="" aria-label="envelope"><span class="fa fa-envelope"></span></a></li>
+                        </ul>
+
+                    </ul>
+
+                    <div class="prise"><del><sup>&#8364;</sup>107</del><sup>&#8364;</sup>89.99</div>
+
+                    <div><b>AVAILABILITY</b>:<small>In stock</small></div>
+
+                    <div><b>PRODUCT CODE</b>:<small>#499577</small></div>
+
+                    <div><b>TAGS</b>:<small class="classic">classic,Casual,V-neck,Loose</small></div>
+
+                    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, nesciunt voluptates
+                        rerum autem
+                        nobis id! Labore esse doloremque illum! Porro quibusdam obcaecati et officia praesentium in
+                        recusandae magni sit asperiores.</p>
+                    <ul class="offer">
+                        <li>Elasticated cuffs</li>
+                        <li>Casual fit</li>
+                        <li>100% Cotton</li>
+                        <li>Free shipping with 4 days delivery</li>
+
+                    </ul>
+
+                    <div class="flex">
+                        <div class="color">
+                            <h5>COLOUR</h5>
+                            <select>
+                                <option disabled selected>Select Color</option>
+                                <option>red</option>
+                                <option>orange</option>
+                                <option>blue</option>
+                                <option>gray</option>
+                            </select>
+                        </div>
+                        <div class="size">
+                            <h5>SIZE</h5>
+                            <select>
+                                <option disabled selected>Select Size</option>
+                                <option>small</option>
+                                <option>medium</option>
+                                <option>large</option>
+                                <option>xl</option>
+                            </select>
+
+                        </div>
+                        <div>
+                          
+
+                            <form>
+                                <label for="quantity" class="qty"> QTY:</label><br>
+                                <input type="number" id="quantity" name="quantity" min="1" max="100" value="1">
+                            </form>
+                        </div>
+
+                    </div>
+                    <div class="flex align-center">
+                        <div class="cart"><a href="" aria-label="add to cart"><span class="fa fa-shopping-cart"></span>ADD TO CART</a></div>
+                        <div class="lookbook"><a href="" aria-label="add to Favorites"><span class="fa fa-heart-o"></span>ADD TO LOOKBOOK</a></div>
+                    </div>
+                    <div class="flex">
+                        <div class="circle">
+                            <a href="" aria-label="compress"><span class="fa fa-compress"></span></a>
+                        </div>
+                        <div class="compare">
+                            ADD TO COMPARE
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+
+                    <div class="navbar">
+                        <button class="bar" aria-label="bar">
+                            <span></span><span></span><span></span></button>
+
+
+                        <div class="tab">
+                            <div class="flex justify-space-bet align-center flex-t-column">
+
+                                <div ><a href="" class="active">DESCRIPTION</a> </div>
+
+                                <div><a href="">VIDEO</a></div>
+
+                                <div><a href="">SIZE & SPECS</a></div>
+
+                                <div><a href="">DELIVERY & RETURNS</a></div>
+
+                                <div><a href="">REVIEWS</a></div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab_data">
+                        <div class="tab_contant description active ">
+                            <b>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</b>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus in quidem
+                                eveniet ullam adipisci ea dignissimos numquam corrupti. Voluptas natus sit
+                                ea non sunt eveniet eos voluptates recusandae velit pariatur enim, iure est
+                                sed odio hic eaque obcaecati voluptate? Facilis quisquam officiis vero
+                                accusantium dolores error alias aperiam maxime aliquid.</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus in quidem
+                                eveniet ullam adipisci ea dignissimos numquam corrupti. Voluptas natus sit
+                                ea non sunt eveniet eos voluptates recusandae velit pariatur enim, iure est
+                                sed odio hic eaque obcaecati voluptate? Facilis quisquam officiis vero
+                                accusantium dolores error alias aperiam maxime aliquid.</p>
+                        </div>
+
+                        <div class="tab_contant">
+                            <iframe src="https://www.youtube.com/embed/PdJq-dAQr-Y?si=OPlrV7WeWLItW8ua"
+                                title="YouTube video player"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen  width="100%" height="450" ></iframe>
+                        </div>
+
+                        <div class="tab_contant">
+                            <table>
+
+                                <thead>
+                                    <tr>
+                                        <th>Feature</th>
+                                        <th>Details</th>
+                                    </tr>
+
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Material</td>
+                                        <td>100% Cotton, 180 GSM</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Fit</td>
+                                        <td>Regular Fit</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Sleeve Type</td>
+                                        <td>Half Sleeve</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sizes Available</td>
+                                        <td>Machine Wash, Do Not Bleach</td>
+                                    </tr>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="tab_contant">
+                            <div><b>Delivery:</b><span>Free delivery on orders above ₹500. Estimated delivery in 3-5
+                                    business days.</span></div>
+                            <div><b>Returns:</b><span>Easy 7-day returns and size exchanges. Item must be unused and in
+                                    original condition.</span></div>
+                            <div><b>Refunds:</b><span>Processed within 5-7 business days.</span></div>
+                            <div><b>Support:</b><span>Need help? Contact us at <a href="">abc@gamil.com</a> or <a
+                                        href="">8797675468</a></span></div>
+                        </div>
+
+                        <div class="tab_contant customer_review">
+                            <div><span class="star">&#9733;&#9733;&#9733;&#9733;&#9734;</span> (4/5)-Based on 350
+                                reviews</div>
+                            <div><b>Megh S.:</b>"Great fit and comfortable fabric! Perfect for daily wear."</div>
+                            <div><b>Anshika S.</b>"Loved the color and quality. Will buy again!"</div>
+                            <div>"Share your experience and help others!" – [Write a Review]</div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+
+        <div class="container-small">
+            <div class="row ">
+                <div class="col-2 col-t-4 col-p-6">
+                    <ul>
+                        <li>
+                            <h4>INFORMATION</h4>
+                        </li>
+                        <li><a href="">The brand</a></li>
+                        <li><a href="">Local stores</a></li>
+                        <li><a href="">customer service</a></li>
+                        <li><a href="">Privacy & cookies</a></li>
+                        <li><a href="">Site map</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-2 col-t-4 col-p-6">
+                    <ul>
+                        <li>
+                            <h4>WHY BUY FROM US </h4>
+                        </li>
+                        <li><a href="">Shipping & returns</a></li>
+                        <li><a href="">Secure shopping</a></li>
+                        <li><a href="">Testimonials</a></li>
+                        <li><a href="">Award winning</a></li>
+                        <li><a href="">Ethical trading</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-2 col-t-4 col-p-6">
+                    <ul>
+
+                        <li>
+                            <h4>YOUR ACCOUNT</h4>
+                        </li>
+                        <li><a href="">Sign in</a></li>
+                        <li><a href="">Register</a></li>
+                        <li><a href="">View cart</a></li>
+                        <li><a href="">View your lookbook</a></li>
+                        <li><a href="">Track an order</a></li>
+                        <li><a href="">Update information</a></li>
+
+
+                    </ul>
+                </div>
+                <div class="col-3 col-t-4 col-p-6">
+                    <ul>
+
+                        <li>
+                            <h4>LOOK BOOK</h4>
+                        </li>
+                        <li><a href="">Latest posts</a></li>
+                        <li><a href="">Men's lookbook</a></li>
+                        <li><a href="">Women's lookbook</a></li>
+                        <li><a href="">Lookbooks RSS feed</a></li>
+                        <li><a href="">View your lookbook</a></li>
+                        <li><a href="">Delete your lookbook</a></li>
+
+
+                    </ul>
+                </div>
+                <div class="col-3 col-t-4 col-p-6">
+                    <ul>
+
+                        <li>
+                            <h4>CONTACT DETAILS</h4>
+                        </li>
+                        <li><a href="" aria-label="address">Head Office: Avenue Fashion, <br>180-182 Regent Street, London.</a></li>
+                        <li><a href="" aria-label="call">Telephone:0123-456-789</a></li>
+                        <li><a href="" aria-label="email">Email:support@yourwebsite.com</a></li>
+
+
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6 col-p-12">
+                    <div class="award">
+                        <h4>AWARD WINNER</h4>
+                        <h4>FASHION AWARDS 2016</h4>
+                    </div>
+                </div>
+                <div class="col-6 col-p-12">
+                    <div class="flex  social justify-center">
+                        <a href="" aria-label="facebook"><span class="fa fa-facebook-f"></span></a>
+                        <a href="" aria-label="twitter"><span class="fa fa-twitter"></span></a>
+                        <a href="" aria-label="instagram"><span class="fa fa-instagram"></span></a>
+                        <a href="" aria-label="pinterest"><span class="fa fa-pinterest"></span></a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container-small">
+                <div class="row align-center">
+                    <div class="col-6 col-p-12">&#169;2016 Avenue Fashion <sup>TM</sup></div>
+                    <div class="col-6 col-p-12">
+                        <div class="row justify-space-bet align-center">
+                            <div class="col-6 col-p-12">
+                                <div class="design">Design by RobbyDesign.com</div>
+                            </div>
+                            <div class="col-6 col-p-12">
+                                <div>Dev by Loremipsum.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
+<script>
+    "use strict";
+
+    $(function(){
+        $(".menu").click(function () {
+                $(".menu").toggleClass("active")
+                $(".collapse").slideToggle();
+            })
+
+
+
+            $(".collapse a.caret").click(function (e) {
+                e.preventDefault();
+
+                if (screen.width <= 980) {
+                    if ($(this).next(".dropdown").is(":hidden")) {
+
+                        $(".collapse  a").next(".dropdown").slideUp();
+                        $(this).next(".dropdown").slideDown();
+                    }
+
+                    else if ($(this).next(".dropdown").is(":visible")) {
+                        $(this).next(".dropdown").slideUp();
+
+                    }
+                }
+            });
+
+            $(".bar").click(function (e) {
+                // e.preventDefault();
+                $(".bar").toggleClass("active")
+                $(".tab").slideToggle();
+            })
+
+            $(".tab a").click(function(e){
+                e.preventDefault();
+                 $(".tab a").removeClass("active")
+                $(this).addClass("active")
+
+              
+                $(".tab_contant").removeClass("active");
+
+                $(".tab_contant").slideUp(0);
+
+
+let tabIndex = $(".tab a").index(this);
+
+
+$(".tab_contant").eq(tabIndex).addClass("active").slideDown();
+
+
+            });
+
+
+            if(screen.width<=980){
+    $(".tab a").click(function(){
+        $(".bar").removeClass("active")
+        $(".tab").slideUp(0);
+    })
+};
+
+
+
+            $('.bxslider').bxSlider({
+                controls:true,
+               auto:true,
+               pause:1000,
+               autoHover:true,
+              
+    });
+    })
+
+</script>
+
+</body>
+
+</html>
