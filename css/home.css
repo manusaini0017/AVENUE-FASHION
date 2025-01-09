@@ -243,7 +243,7 @@ label {
   border: 2px solid rgb(7, 8, 8);
   position: absolute;
   right: 17px;
-  top: 35px;
+  top: 42px;
   border-radius: 10px;
   display: none;
 }
@@ -467,7 +467,7 @@ body {
 .wrap-2 {
   background: url(../img/banner.webp) no-repeat top center/cover;
   padding: 300px 0;
-  top: -89px;
+  top: -102px;
   position: relative;
 }
 .wrap-2 .men-collection {
@@ -597,13 +597,13 @@ body {
   position: absolute;
   top: 3%;
   left: 3%;
-  color: #8e8c8c;
+  color: #000;
 }
 .wrap-3 .product .prise2 {
   position: absolute;
   top: 2%;
   left: 8%;
-  color: #8e8c8c;
+  color: #000;
 }
 .wrap-3 .bx-wrapper {
   margin-bottom: 40px;
@@ -628,6 +628,9 @@ body {
   .wrap-4 .lookbook-about .look_book {
     margin: 30px 0 77px 0;
     padding-left: 2rem;
+  }
+  .wrap-4 .lookbook-about .mb {
+    margin: 2rem 0 119px 0;
   }
 }
 @media screen and (max-width: 980px) {
@@ -678,7 +681,7 @@ body {
     width: 20rem;
   }
   .wrap-2 {
-    top: -87px;
+    top: -101px;
   }
   .wrap-3 {
     padding: 69px 0 0 0;
@@ -773,7 +776,7 @@ body {
     font-size: 19px;
   }
   .wrap-2 {
-    top: -119px;
+    top: -128px;
     background-size: 150%;
     padding: 243px 0 0 0;
   }
